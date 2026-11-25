@@ -1,0 +1,39 @@
+/* Warung Rush — style.css: the page shell around the canvas. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #2c1a0e;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+#stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+#game {
+  width: min(960px, 96vw);
+  height: auto;
+  border: 6px solid #a4713b;
+  border-radius: 14px;
+  background: #f7ead1;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  display: block;
+}
+
+#help {
+  margin: 0;
+  color: #f5efe0;
+  font-size: 14px;
+  text-align: center;
+  max-width: 960px;
+  line-height: 1.5;
+}
